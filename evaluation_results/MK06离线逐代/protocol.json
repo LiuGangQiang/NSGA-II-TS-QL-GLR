@@ -1,0 +1,39 @@
+{
+  "case": "MK06",
+  "algorithms": [
+    "NSGA2",
+    "NSGA2_TS",
+    "NSGA2_TS_QL",
+    "NSGA2_TS_QL_GLR"
+  ],
+  "seeds": [
+    42,
+    47,
+    52,
+    57,
+    62,
+    67,
+    72,
+    77,
+    82,
+    87,
+    92,
+    97,
+    102,
+    107,
+    112,
+    117,
+    122,
+    127,
+    132,
+    137
+  ],
+  "generations": 1000,
+  "method": "replay saved seeds and evaluate each generation against offline empirical reference",
+  "source_sha256": {
+    "主实验正式结果\\MK06\\protocol.json": "b781cadb157c28c032ee2a7ceea953d7cfa24ab958f2cfaae755d7c49551443e",
+    "固定TS修正结果\\MK06\\protocol.json": "f3782c902ec97c3f1dc58eb2b31a2b895ba4620988646976738ac78f1795e8c2",
+    "统一评价结果\\MK06_经验参考前沿.npz": "d451247aafbb9cd1daa489bba62152006b2287072e659cd2b59d65d707948aa6",
+    "MK06离线收敛曲线.py": "52faeb95228f3e8a43aa21b9a7a55278157d10f925a20e045e2922c5d08a02a5"
+  }
+}

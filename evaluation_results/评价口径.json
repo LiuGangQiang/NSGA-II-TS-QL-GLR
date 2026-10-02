@@ -1,0 +1,21 @@
+{
+  "method": "per-case empirical non-dominated union of final fronts; MK06 includes five alternate sensitivity configurations; IGD keeps original pre-run ideal/nadir; HV keeps original fixed point",
+  "main_runs": 240,
+  "sensitivity_rows": 120,
+  "reference_points": {
+    "MK02": 32,
+    "MK06": 48,
+    "MK09": 49
+  },
+  "evaluation_script_sha256": "ea6d334239c806ea64664f850ac3af99344434f8dff1ab5d2133c4044e5075b4",
+  "input_protocol_sha256": {
+    "D:\\FJSP\\Mo3_gpt\\修回工作\\敏感性正式结果\\protocol.json": "a08a318debf016db1fd4beac39c7ffb021891c285cdd2f5734f5ea637824a2e4",
+    "D:\\FJSP\\Mo3_gpt\\修回工作\\主实验正式结果\\MK02\\protocol.json": "db154606fae6ca22d79c9b988e4d6a8eba404aa86c0f00a167c44fd7fe481a69",
+    "D:\\FJSP\\Mo3_gpt\\修回工作\\主实验正式结果\\MK06\\protocol.json": "b781cadb157c28c032ee2a7ceea953d7cfa24ab958f2cfaae755d7c49551443e",
+    "D:\\FJSP\\Mo3_gpt\\修回工作\\主实验正式结果\\MK09\\protocol.json": "72d5ecb03fb0a0467a3f41738bca86d67d1cc7507011cad11ce791eecabb2039",
+    "D:\\FJSP\\Mo3_gpt\\修回工作\\固定TS修正结果\\MK02\\protocol.json": "db5f670524d8439a51df9e6656acee808e8149fdd81f154db7276f1853f31522",
+    "D:\\FJSP\\Mo3_gpt\\修回工作\\固定TS修正结果\\MK06\\protocol.json": "f3782c902ec97c3f1dc58eb2b31a2b895ba4620988646976738ac78f1795e8c2",
+    "D:\\FJSP\\Mo3_gpt\\修回工作\\固定TS修正结果\\MK09\\protocol.json": "75ffcfb2492bde9243d193ab7511c9bc39b89bb9eb047d2dc60759f673ff3015"
+  },
+  "online_igd_note": "search-time Q rewards and saved per-generation IGD use original pre-run reference; only final IGD is recomputed here"
+}

@@ -1,0 +1,149 @@
+{
+  "model": "processing_energy_only; quality_loss=1-min_operation_FPY; precedence_enforced",
+  "instance": "MK06",
+  "population": 60,
+  "generations": 1000,
+  "run_seeds": [
+    42,
+    47,
+    52,
+    57,
+    62,
+    67,
+    72,
+    77,
+    82,
+    87,
+    92,
+    97,
+    102,
+    107,
+    112,
+    117,
+    122,
+    127,
+    132,
+    137
+  ],
+  "ql_start_generation": 300,
+  "ql_decision_period": 10,
+  "pre_generations": 200,
+  "reference_random_count": 500,
+  "reward_definitions": {
+    "original": {
+      "name": "original",
+      "hv": 10.0,
+      "igd": 8.0,
+      "nd": 2.0,
+      "synergy": 0.15,
+      "hv_up_igd_down": -0.08,
+      "hv_down_igd_up": -0.05,
+      "improve_bonus": 2.0,
+      "failed_ts_penalty": -1.5,
+      "no_ts_factor": 0.5,
+      "clip": 50.0
+    },
+    "equal": {
+      "name": "equal",
+      "hv": 6.666666666666667,
+      "igd": 6.666666666666667,
+      "nd": 6.666666666666667,
+      "synergy": 0.15,
+      "hv_up_igd_down": -0.08,
+      "hv_down_igd_up": -0.05,
+      "improve_bonus": 2.0,
+      "failed_ts_penalty": -1.5,
+      "no_ts_factor": 0.5,
+      "clip": 50.0
+    },
+    "hv_only": {
+      "name": "hv_only",
+      "hv": 20.0,
+      "igd": 0.0,
+      "nd": 0.0,
+      "synergy": 0,
+      "hv_up_igd_down": 0,
+      "hv_down_igd_up": 0,
+      "improve_bonus": 0,
+      "failed_ts_penalty": 0,
+      "no_ts_factor": 1,
+      "clip": 50.0
+    },
+    "igd_only": {
+      "name": "igd_only",
+      "hv": 0.0,
+      "igd": 20.0,
+      "nd": 0.0,
+      "synergy": 0,
+      "hv_up_igd_down": 0,
+      "hv_down_igd_up": 0,
+      "improve_bonus": 0,
+      "failed_ts_penalty": 0,
+      "no_ts_factor": 1,
+      "clip": 50.0
+    }
+  },
+  "configs": [
+    {
+      "name": "reward_original",
+      "reward": "original",
+      "ratio": [
+        0.3,
+        0.2,
+        0.5
+      ]
+    },
+    {
+      "name": "reward_equal",
+      "reward": "equal",
+      "ratio": [
+        0.3,
+        0.2,
+        0.5
+      ]
+    },
+    {
+      "name": "reward_hv_only",
+      "reward": "hv_only",
+      "ratio": [
+        0.3,
+        0.2,
+        0.5
+      ]
+    },
+    {
+      "name": "reward_igd_only",
+      "reward": "igd_only",
+      "ratio": [
+        0.3,
+        0.2,
+        0.5
+      ]
+    },
+    {
+      "name": "ratio_2_3_5",
+      "reward": "original",
+      "ratio": [
+        0.2,
+        0.3,
+        0.5
+      ]
+    },
+    {
+      "name": "ratio_4_2_4",
+      "reward": "original",
+      "ratio": [
+        0.4,
+        0.2,
+        0.4
+      ]
+    }
+  ],
+  "source_sha256": {
+    "MK06.xlsx": "7e62577fe5546e5256f39101a48ce5285922495a76a46e79e44e31801faf96ee",
+    "main523-mk06-revision.py": "69ade8d292e0ced8aeab2881ca1da9e9b7e8003cf1f5772e42e5fc5afafaa67d",
+    "敏感性算法.py": "84523807eafc370ed61ca1f69c237a9b9d0b3e8b9a7cfb231d4f57a8f3898ce2",
+    "敏感性实验.py": "b23dbdc12800c7746ea23d31da9133d0be8b99883d7b1b5db71146725359d5c1"
+  },
+  "statistics": "HV/IGD share one fixed pre-run reference across all configurations; population SD"
+}

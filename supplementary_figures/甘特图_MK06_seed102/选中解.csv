@@ -1,0 +1,4 @@
+﻿selected_objective,source_row,makespan,processing_energy,quality_loss,operations
+makespan,0,105.0,3356.0,0.016000000000000014,150
+energy,1,117.0,3302.0,0.017000000000000015,150
+quality_loss,3,106.0,3390.0,0.014000000000000012,150

@@ -1,0 +1,36 @@
+{
+  "case": "MK09",
+  "seed": 102,
+  "objective_units": [
+    "time",
+    "processing energy",
+    "1-min FPY"
+  ],
+  "scaled_projection": "processing energy / 100, matching manuscript Figure 4-5 scale",
+  "algorithms": {
+    "NSGA2": {
+      "path": "修回工作\\主实验正式结果\\MK09\\NSGA2\\seed_102.npz",
+      "sha256": "e570a2255278a2482cc46bf3a38869ad76b7fec582a5b91d3a9889eae42ad9e4",
+      "saved_rows": 60,
+      "unique_non_dominated_points": 30
+    },
+    "NSGA2_TS": {
+      "path": "修回工作\\固定TS修正结果\\MK09\\seed_102.npz",
+      "sha256": "d7d5f8f922ae59d377fc9948b98399c31f43bcecae062fcd69062afe9d723d80",
+      "saved_rows": 60,
+      "unique_non_dominated_points": 13
+    },
+    "NSGA2_TS_QL": {
+      "path": "修回工作\\主实验正式结果\\MK09\\NSGA2_TS_QL\\seed_102.npz",
+      "sha256": "24251ba2eef2793aaced1d3a4c4432c6099c234223632bd0449ab1ce46aea8ee",
+      "saved_rows": 60,
+      "unique_non_dominated_points": 31
+    },
+    "NSGA2_TS_QL_GLR": {
+      "path": "修回工作\\主实验正式结果\\MK09\\NSGA2_TS_QL_GLR\\seed_102.npz",
+      "sha256": "b94b393b3a20640117c5f4e2c20cc9bdf4d552cad08050688d4b5c6790c5efd7",
+      "saved_rows": 60,
+      "unique_non_dominated_points": 19
+    }
+  }
+}
